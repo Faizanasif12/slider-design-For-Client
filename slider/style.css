@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('./5a81149a-433e-4b60-b95c-4bf3ab12455c\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #wrapper {
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+  }
+  
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border: solid white 1.5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255 , 0.2) ;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    border: white solid 2px;
+  }
+  
+  #prev {
+    top: 50%;
+    left: 0;
+    transform: translate(28%, -50%);
+    /* display: none; */
+    z-index: 1;
+  }
+  
+  #next {
+    top: 50%;
+    right: 0;
+    transform: translate(-28%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    /* width: 200px; */
+    height: 308px;
+    /* background: green; */
+  }
+.boxes{
+  display: flex;
+  width: 500px;
+  color: white;
+}
+.btun{
+  border: none;
+  background-color: #e8c64e  ;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.borderr{
+  border-right: white solid 1px;
+  height: 370px;
+  position: absolute;
+  top: 0px;
+/* left: 70px; */
+  background-color: rgb(255, 255, 255 , 0.2) ;
+  width: 70px;
+}
+.boderr2{
+  border-left: white solid 1px;
+  height: 370px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+background-color: rgb(255, 255, 255 , 0.2) ;
+width: 70px; 
+}
